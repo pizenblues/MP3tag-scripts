@@ -1,0 +1,2 @@
+#detect missing tracks: if folder (album) has a missing track, adds a little symbol to the name
+%albumartist% - %date% - %album% $if($is_complete(),,⬛ )[$if($eq(%_extension%,mp3),%_bitrate%,$upper(%_extension%))]/%tracknumber%. %title%
